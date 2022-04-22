@@ -1,0 +1,49 @@
+.nav {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .all-department {
+    width: 19.5%;
+
+    h4 {
+      background: #fed700;
+      padding: 11px 20px;
+      margin-bottom: 0;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  }
+
+  .main-nav {
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navs-left {
+      display: flex;
+
+      li {
+        font-weight: 700;
+        font-size: 15px;
+        margin-right: 25px !important;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:first-child {
+          a {
+            color: #df3737 !important;
+          }
+        }
+      }
+    }
+    p {
+      font-weight: bold;
+    }
+  }
+}

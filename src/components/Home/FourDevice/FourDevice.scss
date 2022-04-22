@@ -1,0 +1,32 @@
+.four-device {
+  padding: 50px 0;
+
+  .wrapper-devices {
+    display: flex;
+    margin: -10px;
+
+    .device-item {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 0 10px;
+      background: #f5f5f5;
+
+      .thumb {
+        width: 48%;
+      }
+
+      .content {
+        width: 48%;
+
+        h4 {
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

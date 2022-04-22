@@ -1,0 +1,149 @@
+.header {
+  padding: 15px 0;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .wrapper-form {
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+    .btn-showmore {
+      margin-right: 30px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    form {
+      display: flex;
+      width: 90%;
+
+      input {
+        width: 70%;
+        padding: 7px 30px;
+        border: 2px solid #fed700;
+        border-right: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      select {
+        width: 213px;
+        border: 2px solid #fed700;
+        border-left: 0;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        padding: 0 25px;
+        background-color: #fed700;
+        border: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+  }
+
+  .interact-icons {
+    display: flex;
+
+    li {
+      margin-right: 30px !important;
+      cursor: pointer;
+      font-size: 18px;
+
+      &:first-child {
+        transform: rotate(90deg);
+      }
+
+      &:last-child {
+        margin-right: 0 !important;
+        position: relative;
+
+        .quantity {
+          position: absolute;
+          font-size: 13px;
+          top: 14px;
+          left: 5px;
+          padding: 0px 7px;
+          background-color: #fed700;
+          border-radius: 50%;
+        }
+
+        .cart-box {
+          position: absolute;
+          top: calc(100% + 10px);
+          right: 0;
+          width: 330px;
+          background: #fff;
+          border-top: 2px solid #fed700;
+          border-radius: 0 0 10px 10px;
+          box-shadow: 0 1px 5px rgb(137, 137, 137);
+          display: none;
+
+          &.show {
+            display: block;
+          }
+
+          .inner {
+            padding: 20px;
+
+            .product-item-box {
+              display: flex;
+
+              .thumb {
+                width: 20%;
+              }
+
+              .info {
+                width: 75%;
+                margin-left: 10px;
+
+                .product-name {
+                  margin-bottom: 0;
+                  color: #0062bd !important;
+                  font-weight: 700;
+                  font-size: 15px;
+                }
+
+                .quantity-price {
+                  font-size: 14px;
+                }
+              }
+
+              button {
+                background: transparent;
+                color: red;
+              }
+            }
+          }
+
+          &.no-item {
+            .inner {
+              padding: 20px;
+
+              h4 {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
